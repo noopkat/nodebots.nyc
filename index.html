@@ -5,166 +5,148 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nodebots NYC</title>
-  <meta name="description" content="Nodebots NYC is a meetup for hardware and javascript enthusiasts and hackers of all skill levels.">
-  <link rel="canonical" href="http://manhattanjs.com/">
-  <link href="http://d2v52k3cl9vedd.cloudfront.net/basscss/7.0.4/basscss.min.css" rel="stylesheet">
+  <meta name="description" content="Tessel Workshop NYC May 2018">
+  <link href="https://fonts.googleapis.com/css?family=Viga" rel="stylesheet">
   <link rel="shortcut icon" href="/img/favicon.png" >
+  <link href="https://d2v52k3cl9vedd.cloudfront.net/basscss/7.0.4/basscss.min.css" rel="stylesheet">
   <style>
-    .bg-yellow {
-      background-color: #F8E01E;
+    .grey {
+      color: #333;
     }
+
+    .pinkline {
+      border-bottom: 4px solid #ff33b7;
+    }
+
+    .azureline {
+      border-bottom: 4px solid #15aae2;
+    }
+
+    .redline {
+      border-bottom: 4px solid red;
+    }
+
+    .bg-paleturquoise {
+      background-color: paleturquoise;
+    }
+
     .yellow {
-      color: #F8E01E;
+      color: #fbe663;
     }
+
     .xl {
-      font-size: 4rem;
+      font-size: 4.8rem;
     }
+
+    .separator {
+      font-size: 2em;
+    }
+
     #bot-container {
       top: -40px;
     }
-    .inkwell {
-      -webkit-filter: sepia(.3) contrast(1.1) brightness(1.1) grayscale(1);
-      filter: sepia(.3) contrast(1.1) brightness(1.1) grayscale(1);
+
+    h1 {
+      font-family: 'Viga', sans-serif;
+      color: white;
+      text-shadow:
+       6px 6px 0 #000,
+       -1px -1px 0 #333,  
+       1px -1px 0 #333,
+       -1px 1px 0 #333,
+       1px 1px 0 #333;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin: -10px;
+      padding: 0;
+      position: relative;
+      z-index: 1;
+    }
+    
+    h1:before {
+      border-top: 4rem solid plum;
+      content:"";
+      margin: 0 auto; 
+      position: absolute;
+      top: 30%; left: 0; right: 0; bottom: 0;
+      width: 100%;
+      z-index: -1;
+    }
+
+    .btn-primary {
+      font-size: 1.5em;
+      box-shadow: 6px 6px 0 #333;
+      background-color: #fbe663;
+    }
+
+    h2 {
+      font-size: 1.5em;
+    }
+
+    h3 {
+      font-size: 1.2em;
+    }
+
+    h3 a:hover, h2 a:hover {
+      text-decoration: none;
+      cursor: pointer;
+      color: #333;
+      padding-bottom: 0.1em;
     }
   </style>
 </head>
-<body>
-  <header class="center bg-yellow py4 inkwell" style="background-image: url(./manhattan-crysler.jpg); background-size: cover; background-position: center 43%;">
-    <h1 class="m0 xl px2 inline-block" style="background: rgba(255, 255, 255, 0.5);">Nodebots NYC</h1>
+<body class="grey">
+  <header class="center bg-paleturquoise py4" style="background-image: url(./img/434.png); background-size: cover;  background-position: center 43%;">
+    <h1 class="m0 xl px2 inline-block" >Tessel </br>Workshop</h1>
   </header>
   <section id="bot-container" class="relative center">
-    <svg
-      xmlns:dc="http://purl.org/dc/elements/1.1/"
-      xmlns:cc="http://creativecommons.org/ns#"
-      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-      xmlns:svg="http://www.w3.org/2000/svg"
-      xmlns="http://www.w3.org/2000/svg"
-      version="1.1"
-      width="250px"
-      height="250px"
-      viewBox="0 0 630 630"
-      id="nodebot">
-      <metadata
-        id="metadata3045">
-        <rdf:RDF>
-          <cc:Work
-            rdf:about="">
-            <dc:format>image/svg+xml</dc:format>
-            <dc:type
-            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-            <dc:title></dc:title>
-          </cc:Work>
-        </rdf:RDF>
-      </metadata>
-      <defs
-        id="defs3043" />
-        <g
-          id="logo">
-          <rect
-          width="630"
-          height="630"
-          x="0"
-          y="0"
-          id="background"
-          style="fill:#f7df1e" />
-        </g>
-        <g
-          transform="matrix(3.0059144,0,0,3.0059144,284.98817,279.57389)"
-          id="Your_Icon"
-          style="fill:#2e2e2c;fill-opacity:1">
-          <g
-            id="g3453"
-            style="fill:#2e2e2c;fill-opacity:1">
-            <g
-              id="g3347"
-              style="fill:#2e2e2c;fill-opacity:1">
-              <g
-                id="g3349"
-                style="fill:#2e2e2c;fill-opacity:1">
-                <g
-                  id="g3351"
-                  style="fill:#2e2e2c;fill-opacity:1">
-                  <path
-                  d="M 85.405,30 H 15.065 C 7.849,30 2,36.191 2,43.556 V 81 H 98 V 43.556 C 98,36.191 92.622,30 85.405,30 z M 28.614,60.425 c -4.749,0 -8.598,-3.929 -8.598,-8.775 0,-4.846 3.849,-8.776 8.598,-8.776 4.749,0 8.597,3.93 8.597,8.776 0,4.846 -3.848,8.775 -8.597,8.775 z m 43.971,0 c -4.748,0 -8.598,-3.929 -8.598,-8.775 0,-4.846 3.85,-8.776 8.598,-8.776 4.747,0 8.597,3.93 8.597,8.776 0,4.846 -3.85,8.775 -8.597,8.775 z"
-                  id="path3353"
-                  style="fill:#2e2e2c;fill-opacity:1;fill-rule:evenodd" />
-                </g>
-              </g>
-            </g>
-            <g
-              id="g3355"
-              style="fill:#2e2e2c;fill-opacity:1">
-              <g
-                id="g3357"
-                style="fill:#2e2e2c;fill-opacity:1">
-                <g
-                  id="g3359"
-                  style="fill:#2e2e2c;fill-opacity:1">
-                  <path
-                  d="m 20.169,84.443 h 59.396 c 1.704,0 3.083,1.409 3.083,3.147 0,1.739 -1.379,3.148 -3.083,3.148 H 20.169 c -1.703,0 -3.084,-1.409 -3.084,-3.148 0,-1.737 1.381,-3.147 3.084,-3.147 z"
-                  id="path3361"
-                  style="fill:#2e2e2c;fill-opacity:1;fill-rule:evenodd" />
-                </g>
-              </g>
-            </g>
-            <g
-              id="g3363"
-              style="fill:#2e2e2c;fill-opacity:1">
-              <g
-                id="g3365"
-                style="fill:#2e2e2c;fill-opacity:1">
-                <g
-                  id="g3367"
-                  style="fill:#2e2e2c;fill-opacity:1">
-                  <path
-                  d="m 30.213,93.649 h 39.84 c 1.704,0 3.084,1.41 3.084,3.149 0,1.739 -1.38,3.147 -3.084,3.147 h -39.84 c -1.703,0 -3.084,-1.408 -3.084,-3.147 0,-1.739 1.381,-3.149 3.084,-3.149 z"
-                  id="path3369"
-                  style="fill:#2e2e2c;fill-opacity:1;fill-rule:evenodd" />
-                </g>
-              </g>
-            </g>
-            <g
-              id="g3371"
-              style="fill:#2e2e2c;fill-opacity:1">
-              <g
-                id="g3373"
-                style="fill:#2e2e2c;fill-opacity:1">
-                <g
-                  id="g3375"
-                  style="fill:#2e2e2c;fill-opacity:1">
-                  <path
-                  d="M 57.212,6.41 C 57.212,2.87 54.491,0 51.022,0 47.556,0 45.001,2.87 45.001,6.41 45.001,8.611 46,10.552 48,11.706 v 10.907 c 0,1.869 1.171,3.383 3,3.383 1.831,0 3,-1.514 3,-3.383 V 11.888 c 2,-1.124 3.212,-3.153 3.212,-5.478 z"
-                  id="path3377"
-                  style="fill:#2e2e2c;fill-opacity:1;fill-rule:evenodd" />
-                </g>
-              </g>
-            </g>
-          </g>
-        </g>
-      </svg>
+   
   </section>
   
-  <section class="col-10 sm-col-8 md-col-8 lg-col-8 mx-auto h3 mb3">
-    <h1 id="nodebotsday">Nodebots Day NYC 2016 is July 30th!</h1>
-    <p>NodeBots Day is a world wide event where people learn how to control the physical world with JavaScript. We want you to leave with the satisfaction of making something awesome! Each event has experts on hand to help you build your project and start you on the path to building awesome devices. Overall, we're going to get together, collaborate, and hack. The focus of NodeBots Day is on sharing and enjoying each other's company and JavaScript. Lots of JavaScript.</p>
-    <p>This year we'll be concentrating on <a href="https://www.sparkfun.com/products/13847">the Johnny Five Inventor's Kit (J5IK)</a>, which includes the Tessel 2. If you have your own hardware you can still follow along with our <a href="https://learn.sparkfun.com/tutorials/experiment-guide-for-the-johnny-five-inventors-kit">inventor's guide</a> or make your own invention. We'll have volunteers on site to help you work though whatever challenges your projects present.</p>
-    <p>We've partnered with <a href="https://scripted.org/">ScriptEd</a> to help provide tickets to their students. ScriptEd equips students in under-resourced schools with the fundamental coding skills and professional experiences that together create access to careers in technology. And we can't think of a better way to do that then giving them a Kit and teaching them how to control the physical world. You can donate towards providing a ticket when you check out.</p>
-    <p>Lunch and space are being provided by <a href="http://www.meetup.com">Meetup.com</a>, who thinks robots are awesome and can't wait to see what you make.</p>
+  <section class="col-10 sm-col-8 md-col-8 lg-col-6 mx-auto h3 mb3">
+    <h2 id="nodebotsday">Building an Extensible IoT Dashboard with <a href="https://glitch.com" class="grey pinkline">Glitch</a>, <a href="https://azure.microsoft.com/en-us/services/iot-hub/" class="grey azureline">Azure IoT Hub</a>, and <a href="http://tessel.io" class="grey redline">Tessel</a></h2>
+    <h3 class="mb4">May 16th 6pm - 9pm <br/>@ <a href="" class="grey pinkline">Microsoft Reactor NYC</a></h3>
+<p>The Tessel 2 is an open-source hardware and software platform that can be programmed with JavaScript out of the box! Johnny-Five is a JavaScript robotics and IoT library, like jQuery for hardware. Bringing those 2 pieces together is one of the greatest ways to start building your very first electronics project!</p>
+<img src="img/equation-cute.png" class="mb3 mt3" style="height: 90%; width: 90%" />
+
+<p>Using a custom Tessel 2 kit we have put together, workshop attendees will go from blinking an LED to building a web-connected service for monitoring a sensor of their choosing. The monitoring solution is an engaging and easy to use web application written in NodeJS and JavaScript that lives on Glitch.com for easy remixing! Customization of the monitoring dashboard is possible to build the IoT app of your dreams.</p>
+
+<p>Attendees will gain knowledge about hardware prototyping, messaging broker services, and controlling their devices from a webpage.</p>
+
+<p>Food and refreshments will also be provided.</p>
+
+<p>Possessing existing knowledge of JavaScript and NodeJS will be helpful for working with the tutorials for the workshop. Knowledge of Git and the command line is beneficial but not directly required for attending. A laptop is required so attendees must bring their own.</p>
+
   </section>
+
   <section class="center">
-    <a href="https://ti.to/bocoup/nodebots-day-nyc-2016" class="btn btn-primary bg-yellow black mb3" target="_blank">Get a Ticket and Make Something Awesome</a>
+    <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=secret" class="btn btn-primary black mb3 p2" target="_blank">Register for the workshop</a>
   </section>
   
-  
-  
-  <section class="col-10 sm-col-8 md-col-8 lg-col-8 mx-auto h3 mb3">
-    <p>Nodebots NYC is a meetup for hardware and javascript enthusiasts and hackers of all skill levels.</p>
-    <p>We run monthly workshops where you can get advice, show off what you're working on, help others, and play with the latest and greatest hardware. Nodebots are by name robots powered by NodeJS and Javascript but often includes software in all languages. They're a great way to learn JavaScript and Hardware concepts. You can find out more at <a href="http://nodebots.io" target="_blank">Nodebots.io</a></p>
+  <section class="separator center mb3 mt3">
+                 🌈  &nbsp; 🌈  &nbsp; 🌈  &nbsp; 
+ </section>
+
+  <section class="col-10 sm-col-8 md-col-8 lg-col-6 mx-auto h3 mb3">
+    <h2>Pre-requisites</h2>
+    <p>You'll get a lot more out of the workshop if you prepare a little beforehand 🔑</p>
+    <p>To ensure you're all ready to rock on the night, please do the following:</p>
+    <ul>
+      <li>Install NodeJS on your laptop</li>
+      <li>Sign up for a Glitch account</li> 
+      <li>Install the Tessel CLI</li>
+    </ul>
+  </section>
+
+  <section class="separator center mb3 mt3">
+    🙌🏻 &nbsp;  🙌🏻 &nbsp; 🙌🏻 
+ </section>
+
+  <section class="col-10 sm-col-8 md-col-8 lg-col-6 mx-auto h3 mb3">
+    <h2>About the Nodebots community</h2>
+    <p>Nodebots is a worlwide community  for hardware and javascript enthusiasts and hackers of all skill levels.</p>
+    <p>We collectively run workshops where you can get advice, show off what you're working on, help others, and play with the latest and greatest hardware. Nodebots are by name robots powered by NodeJS and Javascript but often includes software in all languages. They're a great way to learn JavaScript and Hardware concepts. You can find out more at <a href="http://nodebots.io" target="_blank">Nodebots.io</a></p>
     <p><a href="http://johnny-five.io" target="_blank">Johnny-Five</a> is a great place to get started if you want to get familiar before an event.</p>
-    <p>So come <a href="http://www.meetup.com/nodebots/" target="_blank">join us</a> and solve a problem, play with hardware or learn something new!</p>
-  </section>
-  <section class="center">
-    <a href="http://www.meetup.com/nodebots/" class="btn btn-primary bg-yellow black mb3" target="_blank">RSVP for the Next Meetup</a>
   </section>
   <section class="clearfix overflow-hidden">
     <div class="right mr3 relative">
@@ -1076,7 +1058,7 @@
     </div>
   </section>
   <footer class="bg-black white py2 px3">
-      <p class="m0">Nodebots NYC expects all speakers and attendees to follow the <a class="yellow" href="http://jsconf.com/codeofconduct.html" target="_blank">JSConf code of conduct</a>.</p>
+      <p class="center m0">Workshop will be led by <a class="yellow" href="https://twitter.com/noopkat">Suz Hinton</a> and <a href="https://twitter.com/hipsterbrown" class="yellow">Nick Hehr</a>. They expect all attendees to follow the <a class="yellow" href="http://jsconf.com/codeofconduct.html" target="_blank">JSConf code of conduct</a>.</p>
   </footer>
   <script type="text/javascript" src="main.js"></script>
 </body>
