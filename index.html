@@ -10,6 +10,10 @@
   <link rel="shortcut icon" href="/img/favicon.png" >
   <link href="https://d2v52k3cl9vedd.cloudfront.net/basscss/7.0.4/basscss.min.css" rel="stylesheet">
   <style>
+    .azure {
+      color: #15aae2;
+    }
+
     .grey {
       color: #333;
     }
@@ -30,16 +34,16 @@
       background-color: paleturquoise;
     }
 
-    .yellow {
-      color: #fbe663;
-    }
-
     .xl {
       font-size: 4.8rem;
     }
 
     .separator {
       font-size: 2em;
+    }
+
+    .link:hover {
+      text-decoration: none;
     }
 
     #bot-container {
@@ -76,7 +80,7 @@
     .btn-primary {
       font-size: 1.5em;
       box-shadow: 6px 6px 0 #333;
-      background-color: #fbe663;
+      background-color: #15aae2;
     }
 
     h2 {
@@ -132,9 +136,9 @@
     <p>You'll get a lot more out of the workshop if you prepare a little beforehand 🔑</p>
     <p>To ensure you're all ready to rock on the night, please do the following:</p>
     <ul>
-      <li>Install NodeJS on your laptop</li>
-      <li>Sign up for a Glitch account</li> 
-      <li>Install the Tessel CLI</li>
+      <li><a class="link grey azureline" href="https://nodejs.org/en/download/">Install NodeJS on your laptop</a></li>
+      <li><a class="link grey azureline" href="https://glitch.com">Sign up for a Glitch account</a></li> 
+      <li><a class="link grey azureline" href="http://tessel.github.io/t2-start/">Install the Tessel CLI</a></li>
     </ul>
   </section>
 
@@ -145,8 +149,8 @@
   <section class="col-10 sm-col-8 md-col-8 lg-col-6 mx-auto h3 mb3">
     <h2>About the Nodebots community</h2>
     <p>Nodebots is a worlwide community  for hardware and javascript enthusiasts and hackers of all skill levels.</p>
-    <p>We collectively run workshops where you can get advice, show off what you're working on, help others, and play with the latest and greatest hardware. Nodebots are by name robots powered by NodeJS and Javascript but often includes software in all languages. They're a great way to learn JavaScript and Hardware concepts. You can find out more at <a href="http://nodebots.io" target="_blank">Nodebots.io</a></p>
-    <p><a href="http://johnny-five.io" target="_blank">Johnny-Five</a> is a great place to get started if you want to get familiar before an event.</p>
+    <p>We collectively run workshops where you can get advice, show off what you're working on, help others, and play with the latest and greatest hardware. Nodebots are by name robots powered by NodeJS and Javascript but often includes software in all languages. They're a great way to learn JavaScript and Hardware concepts. You can find out more at <a class="link grey azureline" href="http://nodebots.io" target="_blank">Nodebots.io</a></p>
+    <p><a class="link grey azureline" href="http://johnny-five.io" target="_blank">Johnny-Five</a> is a great place to get started if you want to get familiar before an event.</p>
   </section>
   <section class="clearfix overflow-hidden">
     <div class="right mr3 relative">
@@ -1058,7 +1062,7 @@
     </div>
   </section>
   <footer class="bg-black white py2 px3">
-      <p class="center m0">Workshop will be led by <a class="yellow" href="https://twitter.com/noopkat">Suz Hinton</a> and <a href="https://twitter.com/hipsterbrown" class="yellow">Nick Hehr</a>. They expect all attendees to follow the <a class="yellow" href="http://jsconf.com/codeofconduct.html" target="_blank">JSConf code of conduct</a>.</p>
+      <p class="center m0">Workshop will be led by <a class="azure" href="https://twitter.com/noopkat">Suz Hinton</a> and <a href="https://twitter.com/hipsterbrown" class="azure">Nick Hehr</a>. They expect all attendees to follow the <a class="azure" href="http://jsconf.com/codeofconduct.html" target="_blank">JSConf code of conduct</a>.</p>
   </footer>
   <script type="text/javascript" src="main.js"></script>
 </body>
