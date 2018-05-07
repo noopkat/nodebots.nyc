@@ -1,0 +1,24 @@
+{
+  "name": "tessel-workshop",
+  "version": "1.0.0",
+  "description": "a cool workshop",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noopkat/nodebots.nyc.git"
+  },
+  "author": "Suz Hinton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/noopkat/nodebots.nyc/issues"
+  },
+  "homepage": "https://github.com/noopkat/nodebots.nyc#readme",
+  "dependencies": {
+    "ambient-attx4": "^0.2.11",
+    "azure-iot-device": "^1.4.1",
+    "azure-iot-device-mqtt": "^1.4.1"
+  }
+}
