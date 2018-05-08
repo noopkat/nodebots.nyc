@@ -11,7 +11,11 @@ const ambient = ambientlib.use(tessel.port['A']);
 
 ambient.on('ready', () => {
   // Get points of light data. The readings will happen every .5 seconds
-  setInterval(() => getLightLevel, 500);
+  // The frequency can be updated by setting ambient.pollingFrequency
+  ambient.on('light', (lightData) => {
+    console.log('Light level:', lightData.toFixed(8));
+    reportLightLevel(lightData);
+  });
 });
 
 ambient.on('error', (err) => {
@@ -23,16 +27,8 @@ client.onDeviceMethod('toggleLED', () => {
   tessel.led[2].toggle();
 });
 
-function getLightLevel() {
-  ambient.getLightLevel((err, lightdata) => {
-    if (err) throw err;
-    console.log('Light level:', lightdata.toFixed(8));
-    reportLightLevel(lightdata);
-  });
-};
-
 function reportLightLevel(value) {
-  const data = JSON.stringify({light: value });
+  const data = JSON.stringify({ light: value });
   const message = new Message(data);
 
   console.log('Sending message: ' + message.getData());
