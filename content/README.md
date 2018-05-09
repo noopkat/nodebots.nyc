@@ -85,7 +85,7 @@ The base code we're going to use for the Tessel with your Ambient Module can be 
 
 Plug your Climate Module into Port A on your Tessel.
 
-The base code we're going to use for the Tessel with your Ambient Module can be found in this repo under [content/examples/climate/index.js](https://github.com/noopkat/tessel-workshop/blob/gh-pages/content/examples/climate/index.js). Open this file locally in your code editor to get started.
+The base code we're going to use for the Tessel with your Climate Module can be found in this repo under [content/examples/climate/index.js](https://github.com/noopkat/tessel-workshop/blob/gh-pages/content/examples/climate/index.js). Open this file locally in your code editor to get started.
 
 ### Getting the code ready
 
