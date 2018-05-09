@@ -10,8 +10,8 @@ const ambientlib = require('ambient-attx4');
 const ambient = ambientlib.use(tessel.port['A']);
 
 ambient.on('ready', () => {
-  // Get points of light data. The readings will happen every .5 seconds
-  // The frequency can be updated by setting ambient.pollingFrequency
+  // get points of light data. The readings will happen every .5 seconds
+  // the frequency can be updated by setting ambient.pollingFrequency
   ambient.on('light', (lightData) => {
     const value = lightData[0];
     console.log('Light level:', value.toFixed(8));
@@ -19,11 +19,9 @@ ambient.on('ready', () => {
   });
 });
 
-ambient.on('error', (err) => {
-  console.log(err);
-});
+ambient.on('error', (error) => console.log(error));
 
-// Set up the handler for the LED device method call.
+// sets up the handler for the LED device method call.
 client.onDeviceMethod('toggleLED', (request, response) => {
   // toggle an led on the Tessel board!
   tessel.led[2].toggle();
@@ -31,13 +29,14 @@ client.onDeviceMethod('toggleLED', (request, response) => {
   response.send(200, 'led toggled.', (error) => error && console.log(error));
 });
 
+// sends light readings to IoT Hub
 function reportLightLevel(value) {
+  // create a JSON payload to send to IoT Hub
   const data = JSON.stringify({ light: value });
   const message = new Message(data);
 
   console.log('Sending message: ' + message.getData());
-  client.sendEvent(message, (error, result) => {
-    console.log('message sent');  
-  });
+  // send light value payload to IoT Hub
+  client.sendEvent(message, (error) => error && console.log(error));
 }
 
