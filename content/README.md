@@ -43,8 +43,7 @@ Visit [microsoftazurepass.com](https://www.microsoftazurepass.com) and click 'St
 
 ⚠️ **Important: choose the free tier (F0) when you create your IoT Hub**.
 
-Visit [this guide](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-create-through-portal) on how to create a new Azure IoT Hub and follow the steps.  
-
+Visit [this guide](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-create-through-portal) on how to create a new Azure IoT Hub and follow the steps. Stop once your IoT Hub is created and you get to 'Change the settings of the IoT hub'.  You can ignore all other steps on that page.
 
 ## Registering your Tessel in IoT Hub
 
