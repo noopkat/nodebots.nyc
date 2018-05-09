@@ -19,6 +19,7 @@
   "dependencies": {
     "ambient-attx4": "^0.2.11",
     "azure-iot-device": "^1.4.1",
-    "azure-iot-device-mqtt": "^1.4.1"
+    "azure-iot-device-mqtt": "^1.4.1",
+    "climate-si7020": "^0.1.1"
   }
 }
