@@ -1,4 +1,3 @@
-// https://docs.microsoft.com/en-us/azure/iot-hub/quickstart-send-telemetry-node
 const connectionString = '{Your device connection string here}';
 const Mqtt = require('azure-iot-device-mqtt').Mqtt;
 const DeviceClient = require('azure-iot-device').Client
