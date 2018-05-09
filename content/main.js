@@ -13,8 +13,9 @@ ambient.on('ready', () => {
   // Get points of light data. The readings will happen every .5 seconds
   // The frequency can be updated by setting ambient.pollingFrequency
   ambient.on('light', (lightData) => {
-    console.log('Light level:', lightData.toFixed(8));
-    reportLightLevel(lightData);
+    const value = lightData.pop();
+    console.log('Light level:', value.toFixed(8));
+    reportLightLevel(value);
   });
 });
 
