@@ -9,13 +9,13 @@ We're glad you're here. It's going to be a fun couple of hours! This self-led gu
 1. [How it all works](#how-it-all-works)
 2. [Installing Software](#installing-software)
 3. [Creating your Azure account](#creating-your-azure-account)
-4. [Creating your IoT Hub](#Creating-your-IoT-Hub)
-5. [Registering your Tessel in IoT Hub](#Registering-your-Tessel-in-IoT-Hub)
-6. [Setting up your Tessel for use](#Setting-up-your-Tessel-for-use)
-7. [Gathering data from your Tessel Module](#Gathering-data-from-your-Tessel-Module)
-8. [Creating your IoT Dashboard](#Creating-your-IoT-Dashboard)
-9. [Bonus challenges!](#Bonus-challenges)
-10. [Going even further - IoT Central](#Going-even-further-IoT-Central)
+4. [Creating your IoT Hub](#creating-your-iot-Hub)
+5. [Registering your Tessel in IoT Hub](#registering-your-tessel-in-iot-hub)
+6. [Setting up your Tessel for use](#setting-up-your-tessel-for-use)
+7. [Gathering data from your Tessel Module](#gathering-data-from-your-tessel-module)
+8. [Creating your IoT Dashboard](#creating-your-iot-dashboard)
+9. [Bonus challenges!](#bonus-challenges)
+10. [Going even further - IoT Central](#going-even-further-iot-central)
 
 ## How it all works
 
