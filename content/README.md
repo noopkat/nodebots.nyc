@@ -130,7 +130,7 @@ If everything looks okay, stop the program by pressing Ctrl+C in your terminal.
 
 1. Follow [Step 3 only](https://docs.microsoft.com/en-us/azure/iot-hub/quickstart-control-device-node#register-a-device?wt.mc_id=IoTTesselWS) of 'Register a device' and copy the connection string that is output, again to a local text file. ⚠️ **This connection string is different to the one you copied earlier for the Tessel!** This connection string allows us to listen for incoming device telemetry, and also lets us to get a list of devices registered with your IoT Hub.
 2. Create an account on [Glitch.com](https://glitch.com)
-3. Navigate to [electric-io.glitch.com](https://electric-io.glitch.com) and click the 'Remix on Glitch' button.
+3. Navigate to [electric-io.glitch.me](https://electric-io.glitch.me) and click the 'Remix on Glitch' button.
 4. Open the `.env` file in the root of the file tree, and look for a property called `CONNECTION_STRING`. Paste in this new connection string as the value.
 5. Click the 'Show Live' button near the top of the Glitch editor. You'll see a friendly looking page, with not that much on it yet.
 
