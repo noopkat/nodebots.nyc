@@ -23,9 +23,12 @@ ambient.on('error', (err) => {
   console.log(err);
 });
 
-// Set up the handler for the LED direct method call.
-client.onDeviceMethod('toggleLED', () => {
+// Set up the handler for the LED device method call.
+client.onDeviceMethod('toggleLED', (request, response) => {
+  // toggle an led on the Tessel board!
   tessel.led[2].toggle();
+  // tell IoT Hub that you got the method call request and everything's good.
+  response.send(200, 'led toggled.', (error) => error && console.log(error));
 });
 
 function reportLightLevel(value) {
