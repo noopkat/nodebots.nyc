@@ -8,10 +8,10 @@ We're glad you're here. It's going to be a fun couple of hours! This self-led gu
 
 1. [How it all works](#how-it-all-works)
 2. [Installing Software](#installing-software)
-3. [Creating your Azure account](#creating-your-azure-account)
-4. [Creating your IoT Hub](#creating-your-iot-Hub)
-5. [Registering your Tessel in IoT Hub](#registering-your-tessel-in-iot-hub)
-6. [Setting up your Tessel for use](#setting-up-your-tessel-for-use)
+3. [Setting up your Tessel for use](#setting-up-your-tessel-for-use)
+4. [Creating your Azure account](#creating-your-azure-account)
+5. [Creating your IoT Hub](#creating-your-iot-Hub)
+6. [Registering your Tessel in IoT Hub](#registering-your-tessel-in-iot-hub)
 7. [Gathering data from your Tessel Module](#gathering-data-from-your-tessel-module)
 8. [Creating your IoT Dashboard](#creating-your-iot-dashboard)
 9. [Bonus challenges!](#bonus-challenges)
@@ -27,16 +27,26 @@ If you'd like more in-depth information on what Azure IoT Hub is, and what it ca
 
 ## Installing Software
 
-1. [Install NodeJS](https://nodejs.org)
+1. [Install NodeJS](https://nodejs.org) (we recommend the current LTS version)
 2. [Install the Tessel CLI](http://tessel.github.io/t2-start/)
 
 If you've already done these two things, hooray! Skip on to the next section!
+
+## Setting up your Tessel for use
+
+Follow the steps on the [Tessel website](https://tessel.github.io/t2-start/) to do the following:
+
+1. [Find your Tessel](https://tessel.github.io/t2-start/)
+2. [Connect your Tessel to the Wifi](https://tessel.github.io/t2-start/wifi.html)
+3. [Authorize your Tessel](https://tessel.github.io/t2-start/wifi.html)
+
+Your Tessel should be ready to go now.
 
 ## Creating your Azure account
 
 Creating an Azure account is free, and allows you to set up an IoT Hub, which is a magical service to receive messages from your Tessel, and even send messages back to it! 📞
 
-Visit [microsoftazurepass.com](https://www.microsoftazurepass.com) and click 'Start' to use your Azure Pass. 
+Visit [microsoftazurepass.com](https://www.microsoftazurepass.com/Home/HowTo) and follow the steps on this page to use your Azure Pass. 
 
 
 ## Creating your IoT Hub
@@ -56,21 +66,16 @@ In order for your Tessel to communicate with IoT Hub, we'll need to register it 
 
 🔑 This connection string will be used in your Tessel's code later on, so keep that file around!
 
-## Setting up your Tessel for use
-
-Follow the steps on the [Tessel website](https://tessel.github.io/t2-start/) to do the following:
-
-1. [Find your Tessel](https://tessel.github.io/t2-start/)
-2. [Connect your Tessel to the Wifi](https://tessel.github.io/t2-start/wifi.html)
-3. [Authorize your Tessel](https://tessel.github.io/t2-start/wifi.html)
-
-Your Tessel should be ready to go now.
 
 ## Gathering data from your Tessel Module
 
 You should have either an Ambient Module or a Climate Module to use with your Tessel. The module should be clearly labeled in order for you to discover which one it is. *If you want a different module, try swapping with another workshop buddy!*
 
 🔑 The [modules page](https://tessel.github.io/t2-start/modules.html) on the Tessel website briefly introduces modules and explains which way to plug them in to your Tessel. We're going to use **Port A** today.
+
+The diagram below shows the correct port and orientation of the ambient module:
+
+![ambient moduloe plugged into tessel port A](img/modulephoto.jpg)
 
 
 ### Ambient Module
@@ -183,8 +188,7 @@ Some ideas:
 
 ## Going even further - IoT Central
 
-Electric IO is a basic dashboard to get you started. However, you might find yourself needing a more professional and robust solution as you expand your device collection and find need to juggle lots of different telemetry messages. Microsoft has a fully managed SaaS offering as part of Azure called [IoT Central](https://www.microsoft.com/en-us/iot-central?wt.mc_id=IoTTesselWS), which we highly recommend you check out! 
-
+Electric IO is a basic dashboard to get you started. However, you might find yourself needing a more professional and robust solution as you expand your device collection and find need to juggle lots of different telemetry messages. Microsoft has a fully managed SaaS offering as part of Azure called [IoT Central](https://www.microsoft.com/en-us/iot-central?wt.mc_id=IoTTesselWS), which we highly recommend you check out! The in-depth docs are super informative and available at [our official docs site](https://docs.microsoft.com/en-us/azure/iot-central?wt.mc_id=IoTTesselWS). There'll you'll find an overview, quickstarts and more!
 We'd love your feedback on it 💙
 
 [![azure iot central](img/iotcental01.jpg)](https://www.microsoft.com/en-us/iot-central?wt.mc_id=IoTTesselWS)
