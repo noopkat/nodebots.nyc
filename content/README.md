@@ -98,6 +98,8 @@ Both files contain a variable named `connectionString`. Remember what we copied 
 
 ### Running the code
 
+First, run `npm install` from this repo's directory.
+
 Your code is now ready to run on the Tessel! To deploy, make sure your Tessel is still on and connected. Use your terminal to navigate to the directory your code file is in, and run the following command:
 
 ```t2 run index.js```
