@@ -13,7 +13,7 @@ climate.on('ready', () => {
   setInterval(getTemperature, 500);
 });
 
-ambient.on('error', (error) => console.log(error));
+climate.on('error', (error) => console.log(error));
 
 // sets up the handler for the LED device method call.
 client.onDeviceMethod('toggleLED', (request, response) => {
